@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <data>
+        <record id="view_users_form_inherit" model="ir.ui.view">
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook/page" position="inside">
+                    <field name="token_ids">
+                        <tree create="true">
+                            <field name="token"/>
+                        </tree>
+                    </field>
+                </xpath>
+            </field>
+        </record>
+        
+        
+        <record id="view_partner_form_inherit" model="ir.ui.view">
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='vat']" position="after">
+                    <field name="sync_from_so_api" invisible="1"/>
+                    <field name="contact_id" string="Contact ID" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
