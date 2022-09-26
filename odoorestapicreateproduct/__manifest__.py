@@ -24,5 +24,5 @@
     'auto_install': False,
     'price': 10.00,
     'currency': 'EUR',
-    "live_test_url":'https://youtu.be/Vfqt7wq11pM'
+    "live_test_url":'https://www.youtube.com/watch?v=Vfqt7wq11pM'
 }
