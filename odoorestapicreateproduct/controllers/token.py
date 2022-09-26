@@ -5,13 +5,13 @@ import logging
 import werkzeug.wrappers
 
 from odoo import http
-from odoo.addons.restful.common import invalid_response, valid_response
+from odoo.addons.odoorestapicreateproduct.common import invalid_response, valid_response
 from odoo.http import request
 from odoo.exceptions import AccessError, AccessDenied
 
 _logger = logging.getLogger(__name__)
 
-expires_in = "restful.access_token_expires_in"
+expires_in = "odoorestapicreateproduct.access_token_expires_in"
 
 
 class AccessToken(http.Controller):

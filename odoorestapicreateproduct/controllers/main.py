@@ -6,7 +6,7 @@ import logging
 from odoo.exceptions import AccessError
 
 from odoo import http
-from odoo.addons.restful.common import (
+from odoo.addons.odoorestapicreateproduct.common import (
     extract_arguments,
     invalid_response,
     valid_response,
