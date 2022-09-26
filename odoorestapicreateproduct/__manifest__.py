@@ -12,7 +12,7 @@
     With use of this module user can enable REST API in any Odoo applications/modules.
     
     """,
-    "depends": ["base","web","sale","stock","product"],
+    "depends": ["base","web","product"],
     "data": ["data/ir_config_param.xml", 
              "views/ir_model.xml", 
              "views/res_users.xml", 
